@@ -1,68 +1,26 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Authentification simple avec React.js avec des composant d'ordre supérieur
 
-## Available Scripts
+Si dans votre application,vous voulez implementer l'authentification, il y a de fortes chance que l'instruction(code) que vous allez écrire pour instruire React.js d'afficher ou non une page protégée par l'authentification sera repétitif dans plusieurs composant.D'où l'interêt des `Composant d'ordre supérieur` ou `Higher order component`<br />.
+Car il permettent de definir des règle commune à plusiers composant.
+L'un des exemples les plus connus de ces types des composants est la fonction `connect` de `react-redux` qui s'appelle de la manière suivante `export default connect(MonComposant)`.Et ce qu'il faut c'est simple définir les règles que tous les que tous les composant qui veulent accéder au `state` de `redux` doivent suivre pour accéder au données via les `props`.
+Dans ce petit projet, le `composant d'ordre supérieur` est `require.auth.js` qui contient tout la logique de vérification si l'utilisateur est authentifié ou pas et que j'utilise dans le composant `comment.box.js`.<br /><br />
 
-In the project directory, you can run:
+Si vous avez des questions, n'hesitez pas de m'écrire sur `jochri3@gmail.com`
 
-### `yarn start`
+## Comment faire fonctionner ce projet?
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+##Clonez le repository contenant l'API : https://github.com/jochri3/authentification-robuste-reutilisable-nodejs<br />
+Suivez toutes les instructions pour démarrer l'API.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Dans votre terminal, positionnez-vous dans le dossier principal du projet et exécutez la commande :<br />
+`git clone https://github.com/jochri3/composant_dordre_superieur_react.git` pour cloner le projet dans votre système
 
-### `yarn test`
+##Installer tous les dépendance avec :
+`yarn` ou `npm install` selon que vous utilisez `yarn` ou `npm`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Démarrer le projet avec :
 
-### `yarn build`
+`yarn start`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+##Pour ouvrir l'application en développement.<br />
+Ouvrir [http://localhost:3000](http://localhost:3000) pour le voir dans le navigateur.
