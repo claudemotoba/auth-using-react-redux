@@ -13,7 +13,7 @@ Si vous avez des questions, n'hesitez pas de m'écrire sur `jochri3@gmail.com`
 Suivez toutes les instructions pour démarrer l'API.
 
 Dans votre terminal, positionnez-vous dans le dossier principal du projet et exécutez la commande :<br />
-`git clone https://github.com/jochri3/composant_dordre_superieur_react.git` pour cloner le projet dans votre système
+`git clone https://github.com/jochri3/authentification-reutilisable-reactjs` pour cloner le projet dans votre système
 
 ##Installer tous les dépendance avec :
 `yarn` ou `npm install` selon que vous utilisez `yarn` ou `npm`
