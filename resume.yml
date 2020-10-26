@@ -1,8 +1,0 @@
-CORS: A security feature that is implemented inside the web browser and that behaviour cannot be overriden.
-      Browser(Preflight request) : Hey API i've got a JS script from xyz.com and it seems risky,is it OK if i'm making request from xyz.com to you as mybank.com in a different domain?
-      API : Hi Browser,it's only oky if you make this request from mybank.com domaine
-      Browser : Thanks API.Script you cannot make this request to a different domaine
-
-      Source : https://developer.mozilla.org/fr/docs/Glossaire/requete_pre_verification
-      By default express server is configured to allows cors requests if it has a different port even if it the same domaine.
-      If domain,subdomain or port are different the browser applies this security rule
