@@ -13,5 +13,5 @@ export default ({ history }) => {
     );
   }, []);
 
-  return <h1>Bye bye!!!</h1>;
+  return <h1> Bye bye!!! </h1>;
 };

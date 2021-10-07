@@ -6,7 +6,7 @@ const Feature = () => {
   const {
     auth: { authenticated },
   } = useSelector((state) => state);
-  return <h3>Your auth token : {authenticated}</h3>;
+  return <h3> Your auth token is : {authenticated}</h3>;
 };
 
 export default requireAuth(Feature);

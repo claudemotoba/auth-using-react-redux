@@ -26,7 +26,7 @@ export default ({ history }) => {
           <input
             name="email"
             ref={register({
-              required: "L'adresse email ne peut pas etre vide",
+              required: "L'adresse email est obligatoire",
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
                 message: "invalid email address",
@@ -44,7 +44,7 @@ export default ({ history }) => {
           <input
             name="password"
             ref={register({
-              required: "Le mot de passe ne peut pas etre vide",
+              required: "Le mot de passe est obligatoire",
             })}
           />
           <br />
